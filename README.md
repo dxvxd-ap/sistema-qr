@@ -140,3 +140,4 @@ La aplicación móvil captura el código con la cámara nativa, pero la validaci
     * `?sesion=`: Filtro por nombre o número de sesión.
     * `?grupo=`: Filtro por grupo.
     * `?alumno=`: Búsqueda por nombre o correo del alumno.
+
