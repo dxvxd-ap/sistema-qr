@@ -1,0 +1,27 @@
+# Dependencias y compilados (Ionic / Node)
+**/node_modules/
+**/dist/
+**/www/
+**/.ionic/
+
+# Dependencias y entorno (Laravel)
+**/vendor/
+**/.env
+**/.env.backup
+**/.env.production
+**/storage/*.key
+**/storage/pail
+
+# Compilación móvil (Android / iOS)
+**/android/.gradle/
+**/android/app/build/
+**/android/build/
+**/ios/App/build/
+**/ios/App/Pods/
+
+# Archivos de sistema y editores
+.DS_Store
+Thumbs.db
+*.log
+.idea/
+.vscode/

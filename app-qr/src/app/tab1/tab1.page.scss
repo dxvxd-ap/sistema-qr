@@ -1,0 +1,109 @@
+.scanner-viewfinder {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 9999;
+  padding: 40px 20px 50px 20px;
+  pointer-events: none;
+}
+
+.scanner-header {
+  pointer-events: auto;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 10px 20px;
+  border-radius: 20px;
+  margin-top: 20px;
+  backdrop-filter: blur(4px);
+
+  p {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0;
+    text-align: center;
+  }
+}
+
+.scanner-box {
+  width: 260px;
+  height: 260px;
+  position: relative;
+  border-radius: 16px;
+  box-shadow: 0 0 0 4000px rgba(0, 0, 0, 0.55);
+}
+
+.scanner-corner {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  border-color: #2dd36f;
+  border-style: solid;
+}
+
+.scanner-corner.top-left {
+  top: 0;
+  left: 0;
+  border-width: 4px 0 0 4px;
+  border-top-left-radius: 16px;
+}
+
+.scanner-corner.top-right {
+  top: 0;
+  right: 0;
+  border-width: 4px 4px 0 0;
+  border-top-right-radius: 16px;
+}
+
+.scanner-corner.bottom-left {
+  bottom: 0;
+  left: 0;
+  border-width: 0 0 4px 4px;
+  border-bottom-left-radius: 16px;
+}
+
+.scanner-corner.bottom-right {
+  bottom: 0;
+  right: 0;
+  border-width: 0 4px 4px 0;
+  border-bottom-right-radius: 16px;
+}
+
+.scanner-laser {
+  position: absolute;
+  top: 0;
+  left: 5%;
+  width: 90%;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, #2dd36f, transparent);
+  box-shadow: 0 0 10px #2dd36f;
+  animation: scanLaser 2s infinite ease-in-out;
+}
+
+@keyframes scanLaser {
+  0% {
+    top: 5%;
+  }
+  50% {
+    top: 92%;
+  }
+  100% {
+    top: 5%;
+  }
+}
+
+.scanner-footer {
+  pointer-events: auto;
+  margin-bottom: 20px;
+
+  ion-button {
+    --box-shadow: 0 4px 15px rgba(235, 68, 90, 0.4);
+    font-weight: 600;
+  }
+}
+
